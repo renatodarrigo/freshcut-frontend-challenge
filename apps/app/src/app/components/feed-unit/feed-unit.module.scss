@@ -1,0 +1,23 @@
+.feedUnit {
+  display: block;
+  margin-top: 24px;
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 306px;
+    border-radius: 8px 8px 8px 8px;
+
+    .video {
+      display: block;
+      width: 100%;
+      border-radius: 8px 0px 0px 8px;
+    }
+
+    .sidebar {
+      display: block;
+      width: 100%;
+      background-color: #151417;
+      border-radius: 0px 8px 8px 0px;
+    }
+  }
+}

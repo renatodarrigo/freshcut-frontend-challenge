@@ -1,0 +1,10 @@
+.badge {
+  color: #f2bc3d;
+  font-size: 14px;
+  width: 14px;
+
+  &.big {
+    font-size: 32px;
+    width: 32px;
+  }
+}

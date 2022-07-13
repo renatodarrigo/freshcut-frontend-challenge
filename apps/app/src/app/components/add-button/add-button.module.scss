@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  place-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  height: 16px;
+  min-width: 16px;
+  max-width: 16px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #000;
+  border: 1.25px solid #f2bc3d;
+  transform: translateY(50%);
+  transition: border-color .1s,background-color .1s;
+
+  &:before, &:after {
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    content: "";
+    margin: auto;
+    position: absolute;
+    height: 2px;
+    background-color: #f2bc3d;
+    transition: background-color .1s;
+  }
+
+  &:after {
+    transform: rotate(90deg);
+  }
+
+  &:hover, &:active {
+    background-color: #f2bc3d;
+
+    &:before, &:after {
+      background-color: #000;
+    }
+  }
+}

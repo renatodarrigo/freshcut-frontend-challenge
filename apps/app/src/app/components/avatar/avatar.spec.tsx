@@ -1,10 +1,9 @@
-import App from './app';
+import Avatar from './avatar';
 import { render } from '@testing-library/react';
 
-describe('App', () => {
+describe('Avatar', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<App />);
-
+    const { baseElement } = render(<Avatar />);
     expect(baseElement).toBeTruthy();
   });
 });

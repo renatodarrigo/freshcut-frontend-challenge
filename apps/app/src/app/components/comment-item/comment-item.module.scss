@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  row-gap: 8px;
+
+  .commentWrapper {
+    display: grid;
+    grid-template-columns: 24px 1fr 16px;
+    column-gap: 8px;
+
+    .commentInfo {
+      .commentUser {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 700;
+      }
+
+      .commentText {
+        font-size: 12px;
+        line-height: 16px;
+        color: #a19daa;
+      }
+
+      .commentFooter {
+        margin-top: 8px;
+        display: flex;
+        column-gap: 10px;
+        font-size: 11px;
+        line-height: 13px;
+
+        .commentTime {
+          color: #8c8797;
+        }
+
+        .commentReply {
+          display: block;
+          border: none;
+          background-color: transparent;
+          font-size: 11px;
+          line-height: 13px;
+          font-weight: 700;
+          color: #e0dee3;
+          cursor: pointer;
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .commentReplies {
+    padding-left: 32px;
+  }
+}

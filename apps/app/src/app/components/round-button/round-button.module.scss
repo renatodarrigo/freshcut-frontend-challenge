@@ -1,0 +1,21 @@
+.roundButton {
+  position: relative;
+  display: block;
+  padding: 12px 24px 12px 24px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #F2BC3D;
+  cursor: pointer;
+
+  > span {
+    display: block;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  &:active {
+    background-color: #ffdc8b;
+  }
+}

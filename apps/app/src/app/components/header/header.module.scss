@@ -1,0 +1,105 @@
+.container {
+  position: relative;
+  width: 100%;
+  border-radius: 8px 8px 8px 8px;
+  padding: 40px 48px 40px 48px;
+  background-color: rgb(50, 0, 50);
+  background-size: cover;
+  display: grid;
+  grid-template-areas:
+    'avatar nameAndBadge followButton'
+    'avatar followersViewsAndLikes followButton'
+    'avatar description followButton'
+    'socialLinks socialLinks socialLinks';
+  grid-template-columns: 128px 591px auto;
+  column-gap: 24px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px 8px 8px 8px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(21, 20, 23, 0) -40.73%,
+      #151417 75.81%
+    );
+  }
+
+  .avatar {
+    grid-area: avatar;
+    position: relative;
+    display: block;
+  }
+
+  .nameAndBadge {
+    grid-area: nameAndBadge;
+    position: relative;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+  }
+
+  .followersViewsAndLikes {
+    grid-area: followersViewsAndLikes;
+    position: relative;
+    display: flex;
+    column-gap: 16px;
+    > div {
+      font-size: 17px;
+      line-height: 22px;
+      > span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .description {
+    grid-area: description;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .socialLinks {
+    grid-area: socialLinks;
+    position: relative;
+    display: flex;
+    column-gap: 18px;
+    padding-top: 24px;
+
+    > a {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #151417;
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+
+  .followButton {
+    grid-area: followButton;
+    position: relative;
+    display: block;
+    align-self: center;
+    justify-self: end;
+    padding-top: 18px;
+  }
+
+  h1 {
+    position: relative;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 12px;
+  height: 100%;
+
+  .header {
+    display: flex;
+    font-size: 12px;
+    line-height: 16px;
+
+    > span {
+      display: block;
+      color: #8c8797;
+      padding-left: 4px;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 16px;
+
+    .actions {
+      display: flex;
+      column-gap: 30px;
+      align-items: flex-end;
+    }
+  }
+}
